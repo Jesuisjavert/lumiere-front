@@ -2,7 +2,7 @@
   <section id="hero">
     <v-img
       :min-height="minHeight"
-      :src="require('@/assets/columbus-1936633.jpg')"
+      :src="require('@/assets/movie-918655.jpg')"
       class="white--text"
       gradient="to right, rgba(5, 11, 31, .8), rgba(5, 11, 31, .8)"
     >
