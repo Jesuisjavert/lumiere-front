@@ -62,9 +62,9 @@
       drawer: null,
       items: [
         'Home',
-        'About',
-        'Contact',
-        'Pro',
+        'Movie',
+        'Review',
+        'Signup',
       ],
     }),
   }

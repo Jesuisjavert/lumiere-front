@@ -6,9 +6,9 @@
   import LoadSections from '@/mixins/load-sections'
 
   export default {
-    name: 'Pro',
+    name: 'Signup',
 
-    metaInfo: { title: 'Pro Features' },
+    metaInfo: { title: 'Signup' },
 
     extends: View,
 

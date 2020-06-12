@@ -6,9 +6,9 @@
   import LoadSections from '@/mixins/load-sections'
 
   export default {
-    name: 'ContactUs',
+    name: 'Review',
 
-    metaInfo: { title: 'Contact Us' },
+    metaInfo: { title: 'Review' },
 
     extends: View,
 
