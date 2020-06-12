@@ -3,7 +3,6 @@
     <section id="hero-alt">
       <base-img
         :height="$vuetify.breakpoint.mdAndUp ? 350 : 225"
-        :gradient="gradient"
         :src="src"
         color="#45516b"
         flat
