@@ -21,9 +21,9 @@
       />
 
       <base-body
-        v-if="text || $slots.default"
+        v-if="content || $slots.default"
         :space="horizontal ? 0 : undefined"
-        :text="text"
+        :text="content"
         class="mx-auto"
         max-width="700"
       >
@@ -65,6 +65,7 @@
       },
       text: String,
       title: String,
+      content: String,
     },
 
     computed: {

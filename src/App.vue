@@ -8,8 +8,8 @@
   export default {
     name: 'App',
     metaInfo: {
-      title: 'App',
-      titleTemplate: '%s | Zero Pro',
+      title: 'Frère',
+      titleTemplate: '%s | Lumière',
       htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },

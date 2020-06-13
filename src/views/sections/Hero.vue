@@ -16,9 +16,11 @@
           <base-heading title="영화를 사랑하는 당신을 위하여, Lumière" />
 
           <base-body>
-            Infographic hypotheses influencer user experience Long madel ture gen-z paradigm shift client partner network product seilans solve management influencer analytics leverage virality.
-            incubator seed round massmarket.
-            buyer agile development growth hacking business-to-consumer ecosystem
+            Like the Lumière brothers enlightned us by inventing the film, itself, Our Service would enlighten your whole different experience
+            by letting you choose your life-time inspiring movie by our recommendation Algorithm.
+            In our site, you could find your own favorite movie by comparing detail information of that movie.
+            And plus, you could read and write your own review for that movie.
+            <br>Express yourself and Be connected with others!
           </base-body>
 
           <div

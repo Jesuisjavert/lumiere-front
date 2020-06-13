@@ -18,7 +18,6 @@
         'hero',
         'theme-features',
         'features',
-        'contact-us',
         'affiliates',
         'social-media',
         'keep-in-touch',
