@@ -5,10 +5,10 @@
     space="36"
   >
     <v-container>
-      <base-section-heading title="Who's using Zero?" />
+      <base-section-heading title="Used Skills" />
 
       <v-slide-group>
-        <template v-for="n in 6">
+        <template v-for="n in 8">
           <v-slide-item
             :key="n"
             class="align-self-center"
@@ -23,7 +23,7 @@
           </v-slide-item>
 
           <v-responsive
-            v-if="n < 6"
+            v-if="n < 8"
             :key="`divider-${n}`"
             class="text-center"
             height="56"

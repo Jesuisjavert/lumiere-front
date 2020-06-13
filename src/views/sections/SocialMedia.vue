@@ -13,24 +13,22 @@
         color="transparent"
         title="Social Media"
       >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur recusandae aut repudiandae illo error obcaecati dolores voluptate, tempore.
+        BackEnd &#38; FrontEnd Development : Kang Donghoon &#38; Kim Ikhan
       </base-section-heading>
 
       <a
         class="d-inline-block mb-8"
-        href="https://vuetifyjs.com"
+        href="https://www.instagram.com/unialike"
         style="text-decoration: none;"
         target="_blank"
       >
-        https://vuetifyjs.com
+        https://www.instagram.com/unialike
       </a>
-
       <div class="py-4" />
-
       <v-btn
         class="font-weight-bold"
         color="white"
-        href="https://twitter.com/vuetifyjs"
+        href="https://www.instagram.com/unialike"
         light
         min-width="168"
         target="_blank"
