@@ -17,11 +17,11 @@
 
     data: () => ({
       features: [
-        'Zero Installation',
-        'Easy Customization',
-        'User Friendly Design',
-        '24/7 Support Desk',
-        'SEO Optimized',
+        'Write your comment',
+        'Mobile Accesibility',
+        'Let your idea spread',
+        'Responsive Image',
+        'Signup',
       ],
     }),
   }

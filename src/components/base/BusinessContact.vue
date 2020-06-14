@@ -48,17 +48,17 @@
         {
           icon: 'mdi-map-marker-outline',
           title: 'Address',
-          text: '8553 N. Beach St. Ste. 227<br>Fort Worth, Texas 76137',
+          text: 'Gwangju, Jangdeokdong <br> South Korea',
         },
         {
           icon: 'mdi-cellphone',
           title: 'Phone',
-          text: '01 (800) 433 744<br>01 (800) 433 633',
+          text: 'Donghoon : +82)010-1234-5678 <br> Ikhan : +82)010-1234-5678',
         },
         {
           icon: 'mdi-email',
           title: 'Email',
-          text: 'john@vuetifyjs.com<br>heather@vuetifyjs.com',
+          text: 'Donghoon: jesuisjavert@gmail.com <br> Ikhan : dlrgks0831@gmail.com',
         },
       ],
     }),

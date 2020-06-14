@@ -2,7 +2,7 @@
   <v-theme-provider :dark="dark">
     <div>
       <base-img
-        :src="require('@/assets/zero-logo-dark.svg')"
+        :src="require('@/assets/logo.png')"
         contain
         max-width="128"
         min-height="78"
@@ -12,12 +12,12 @@
       <base-title
         size="body-1"
         space="4"
-        title="MULTI-PURPOSE THEME"
+        title="Brand Logo Origin"
         weight="regular"
       />
 
       <base-body>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo pariatur quidem, quis modi iure nihil commodi suscipit, corporis dicta adipisci, voluptatum quia cupiditate. Nulla minus voluptatum nostrum deleniti, asperiores facere.
+        팀명 Lumière는 세계 최초로 영화를 개발한 루미에르 형제에서 이름을 따왔습니다. 루미에르 형제가 영화를 통해 우리 삶을 밝혀주었듯, 이 사이트를 통해 여러분의 영화 인생이 밝혀졌으면 합니다.
       </base-body>
 
       <base-btn

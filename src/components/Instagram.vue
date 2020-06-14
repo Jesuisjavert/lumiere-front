@@ -2,7 +2,7 @@
   <base-info-card title="Instagram">
     <v-row dense>
       <v-col
-        v-for="n in 6"
+        v-for="n in 9"
         :key="n"
         cols="auto"
       >
