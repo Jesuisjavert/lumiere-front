@@ -15,7 +15,7 @@
     mixins: [
       LoadSections([
         'hero-alt',
-        'pro-features',
+        'keep-in-touch',
       ]),
     ],
 
