@@ -64,7 +64,7 @@
         'Home',
         'Movie',
         'Review',
-        'Signup',
+        'Login',
       ],
     }),
   }

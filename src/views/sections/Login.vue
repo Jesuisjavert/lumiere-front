@@ -9,7 +9,7 @@
           cols="12"
           md="6"
         >
-          <base-signup-form title="Sign Up" />
+          <base-login-form title="Login" />
         </v-col>
       </v-row>
     </v-container>
@@ -18,6 +18,6 @@
 
 <script>
   export default {
-    name: 'SectionSignup',
+    name: 'SectionLogin',
   }
 </script>

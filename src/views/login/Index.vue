@@ -6,16 +6,16 @@
   import LoadSections from '@/mixins/load-sections'
 
   export default {
-    name: 'Signup',
+    name: 'Login',
 
-    metaInfo: { title: 'Signup' },
+    metaInfo: { title: 'Login' },
 
     extends: View,
 
     mixins: [
       LoadSections([
         'hero-alt',
-        'keep-in-touch',
+        'login',
       ]),
     ],
 
