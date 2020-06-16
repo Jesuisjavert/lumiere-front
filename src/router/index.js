@@ -37,7 +37,7 @@ const router = new Router({
         },
         {
           path: 'login',
-          name: 'Login',
+          name: 'Membership',
           component: () => import('@/views/login/Index.vue'),
           meta: { src: require('@/assets/admission-2974645.jpg') },
         },

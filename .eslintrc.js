@@ -18,7 +18,7 @@ module.exports = {
     'template-curly-spacing': 'off',
     indent: 'off',
     //
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
   },
 
   overrides: [

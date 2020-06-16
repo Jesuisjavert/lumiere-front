@@ -97,7 +97,12 @@
     </v-dialog>
   </div>
   <div v-else>
-    <p> 로그인 되었습니다. </p>
+    <h4> 로그인 되었습니다. </h4>
+    <a
+      @click="logout"
+    >
+      logout
+    </a>
   </div>
 </template>
 
@@ -156,9 +161,17 @@
         }
       },
       logout () {
-        this.isLogined = false
-        this.$cookies.remove('auth-token')
-        this.$router.push('/')
+        const RequestHeader = {
+          headers: {
+            'Authorization': `Token ${this.$cookies.get('auth-token')}`,
+          },
+        }
+        axios.post(API_URL + '/rest-auth/logout/', RequestHeader)
+          .then((res) => {
+            this.isLogined = false
+            this.$cookies.remove('auth-token')
+            this.$router.push('/')
+          })
       },
       signup () {
         const signupData = {

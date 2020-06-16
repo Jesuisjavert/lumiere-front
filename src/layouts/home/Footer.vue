@@ -16,7 +16,12 @@
         </v-col>
       </v-row>
     </v-container>
-    <a @click.native="logout"> logout </a>
+    <a
+      v-if="isLogined"
+      @click="logout"
+    >
+      logout
+    </a>
   </v-footer>
 </template>
 
@@ -32,6 +37,15 @@
         'Linkedin',
       ],
     }),
+    methods: {
+      logout () {
+        console.log(this.isLogined)
+        console.log(this.$cookies)
+        this.isLogined = false
+        this.$cookies.remove('auth-token')
+        this.$router.push('/')
+      },
+    },
   }
 </script>
 
