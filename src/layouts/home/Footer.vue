@@ -16,6 +16,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <a @click.native="logout"> logout </a>
   </v-footer>
 </template>
 

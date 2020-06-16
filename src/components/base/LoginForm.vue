@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="!isLogined">
     <base-info-card
       :title="title"
       :subtitle="subtitle"
@@ -42,7 +42,6 @@
           type="submit"
           v-bind="$attrs"
           v-on="on"
-          @click="signup"
         >
           Sign up
         </base-btn>
@@ -63,7 +62,7 @@
         />
         <base-text-field
           id="password1"
-          v-model="password"
+          v-model="password1"
           type="password"
           label="Password1"
           class="mx-4"
@@ -71,7 +70,7 @@
         />
         <base-text-field
           id="password2"
-          v-model="password"
+          v-model="password2"
           type="password"
           label="Password2"
           class="mx-4"
@@ -82,7 +81,7 @@
           <v-btn
             color="green darken-1"
             text
-            @click="dialog = false"
+            @click="signup"
           >
             Signup
           </v-btn>
@@ -96,7 +95,9 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-    <a @click.native="logout"> logout </a>
+  </div>
+  <div v-else>
+    <p> 로그인 되었습니다. </p>
   </div>
 </template>
 
@@ -158,6 +159,21 @@
         this.isLogined = false
         this.$cookies.remove('auth-token')
         this.$router.push('/')
+      },
+      signup () {
+        const signupData = {
+          username: this.username,
+          password1: this.password1,
+          password2: this.password2,
+        }
+        axios.post(API_URL + '/rest-auth/signup/', signupData)
+          .then((res) => {
+            this.cookies_set(res.data.key)
+            this.$router.push('/')
+          })
+          .catch((err) => {
+            console.log(err.response)
+          })
       },
     },
   }
