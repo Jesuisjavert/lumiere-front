@@ -108,7 +108,7 @@
         axios.post(API_URL + '/articles/create/', articleData, RequestHeader)
           .then((res) => {
             console.log(res)
-            this.$router.push('/')
+            this.$router.push('/review')
           })
       },
     },

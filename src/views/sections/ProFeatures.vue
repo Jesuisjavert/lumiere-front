@@ -68,6 +68,12 @@
     created () {
       this.loadArticle()
     },
+    mounted () {
+      this.loadArticle()
+    },
+    computed () {
+      this.loadArticle()
+    },
     methods: {
       loadArticle () {
         axios.get(`${API_URL}/articles/`).then((res) => {
