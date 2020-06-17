@@ -105,10 +105,10 @@
             'Authorization': `Token ${this.$cookies.get('auth-token')}`,
           },
         }
-        axios.post(API_URL + '/articles/create/', this.articleData, RequestHeader)
+        axios.post(API_URL + '/articles/create/', articleData, RequestHeader)
           .then((res) => {
             console.log(res)
-            this.$router.push('/review')
+            this.$router.push('/')
           })
       },
     },

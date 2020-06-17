@@ -16,11 +16,38 @@
           <v-card
             class="mx-auto"
           >
+            <v-row justify="center">
+            <v-dialog v-model="dialog" width="600px">
+              <template v-slot:activator="{ on, attrs }">
             <v-img
-              class="white--text align-end"
+              class="white--text align-end mx-auto"
               height="550px"
               :src="'https://image.tmdb.org/t/p/w342/' + card.poster_path"
+              v-bind="attrs"
+              v-on="on"
             />
+              </template>
+                <v-card>
+                  <v-card-title>
+                    <span class="headline">{{card.title}}</span>
+                  </v-card-title>
+                  <v-card-text>
+                    <span> 원제목: {{card.original_title}} </span><br>
+                    <span> 개봉일 : {{card.release_date}} </span><br>
+                    <span> 관객수 : {{card.popularity}} </span><br>
+                    <span> 평점 : {{card.vote_average}} </span><br><br>
+                    <span> {{card.overview}} </span>
+                  </v-card-text>
+                  <v-card-text>
+                    <span>  {{card.comments.comment}} </span>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                  </v-card-actions>
+                </v-card>
+              </v-dialog>
+            </v-row>
+
           </v-card>
         </v-col>
       </v-row>
