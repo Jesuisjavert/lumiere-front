@@ -12,6 +12,7 @@
         contain
         max-width="180"
         width="100%"
+        @click="gohome"
       />
 
       <v-spacer />
@@ -67,6 +68,11 @@
         'Membership',
       ],
     }),
+    methods: {
+      gohome() {
+        this.$router.push('/')
+      }
+    }
   }
 </script>
 

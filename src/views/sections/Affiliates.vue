@@ -8,7 +8,7 @@
       <base-section-heading title="Used Skills" />
 
       <v-slide-group>
-        <template v-for="n in 8">
+        <template v-for="n in 9">
           <v-slide-item
             :key="n"
             class="align-self-center"
@@ -23,7 +23,7 @@
           </v-slide-item>
 
           <v-responsive
-            v-if="n < 8"
+            v-if="n < 9"
             :key="`divider-${n}`"
             class="text-center"
             height="56"

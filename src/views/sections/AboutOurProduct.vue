@@ -3,7 +3,7 @@
     <base-section-heading
       color="grey lighten-2"
       icon="mdi-vuetify"
-      title="About our Product"
+      title="당신이 인생영화, Lumière와 함께"
     />
     <v-container>
       <v-row>
@@ -41,8 +41,9 @@
                   <hr>
                   <v-card-text>
                     <v-col v-for="comment in card.comments" :key="comment.id">
-                      <span>{{ comment.user.username}}: {{ comment.content }}</span>
+                      <span>{{ comment.user.username}}<span>&nbsp&nbsp 평점:{{ comment.rank}}</span><br> {{ comment.content }}</span>
                     </v-col>
+                    <hr><br>
                     <span>평점</span>
                     <base-text-field
                       id="rank"
