@@ -52,6 +52,12 @@
                 label="title"
                 required
               />
+              <v-text-field
+                v-model="title"
+                :rules="nameRules"
+                label="title"
+                required
+              ></v-text-field>
             </v-list-item-content>
           </v-list-item>
           <v-list-item>

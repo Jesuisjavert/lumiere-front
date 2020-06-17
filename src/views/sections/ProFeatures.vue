@@ -89,11 +89,6 @@
     created () {
       this.loadArticle()
     },
-    watch: {
-      features() {
-        this.loadArticle
-      }
-    },
     methods: {
       loadArticle () {
         axios.get(`${API_URL}/articles/`).then((res) => {
