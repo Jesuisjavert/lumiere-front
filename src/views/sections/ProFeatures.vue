@@ -35,11 +35,26 @@
                 v-for="feature in features"
                 :key="feature.id"
               >
-                <td
-                  v-text="feature.title"
-                  v-bind="feature"
-                  v-on="on"
-                />
+                <v-dialog v-model="dialog" width="600px">
+                  <template v-slot:activator="{ on, attrs }">
+                    <td
+                      v-text="feature.title"
+                      v-bind="attrs"
+                      v-on="on"
+                    />
+                  </template>
+                  <v-card>
+                    <v-card-title>
+                      <span class="headline">{{feature.title}}</span>
+                    </v-card-title>
+                    <v-card-text>
+                      <span> {{feature.content}}</span>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
                 <td class="text-center">
                   {{ feature.user.username }}
                 </td>
@@ -68,8 +83,7 @@
 
     data () {
       return {
-        features: null,
-        dialog: false,
+        features: [],
       }
     },
     created () {
