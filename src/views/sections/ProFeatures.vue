@@ -46,6 +46,8 @@
               </tr>
             </tbody>
           </v-simple-table>
+          <v-spacer></v-spacer>
+          <base-article-create fluid class="pa-0" />
         </v-col>
       </v-row>
     </v-container>
@@ -59,6 +61,11 @@
 
   export default {
     name: 'SectionProChart',
+
+    components: {
+      ArticleCreate: () => import('@/components/base/ArticleCreate'),
+    },
+
     data () {
       return {
         features: null,
@@ -68,11 +75,10 @@
     created () {
       this.loadArticle()
     },
-    mounted () {
-      this.loadArticle()
-    },
-    computed () {
-      this.loadArticle()
+    watch: {
+      features() {
+        this.loadArticle
+      }
     },
     methods: {
       loadArticle () {
